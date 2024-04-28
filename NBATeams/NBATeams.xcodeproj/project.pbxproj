@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F4BFD5402BD0AE560088ED3C /* NBATeamsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BFD53F2BD0AE560088ED3C /* NBATeamsApp.swift */; };
+		F4BFD5422BD0AE560088ED3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BFD5412BD0AE560088ED3C /* ContentView.swift */; };
+		F4BFD5442BD0AE5A0088ED3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4BFD5432BD0AE5A0088ED3C /* Assets.xcassets */; };
+		F4BFD5472BD0AE5A0088ED3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4BFD5462BD0AE5A0088ED3C /* Preview Assets.xcassets */; };
+		F4BFD5512BD0AE5A0088ED3C /* NBATeamsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BFD5502BD0AE5A0088ED3C /* NBATeamsTests.swift */; };
+		F4BFD55B2BD0AE5A0088ED3C /* NBATeamsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BFD55A2BD0AE5A0088ED3C /* NBATeamsUITests.swift */; };
+		F4BFD55D2BD0AE5A0088ED3C /* NBATeamsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BFD55C2BD0AE5A0088ED3C /* NBATeamsUITestsLaunchTests.swift */; };
+		F4BFD56A2BD0AE8F0088ED3C /* NBATeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BFD5692BD0AE8F0088ED3C /* NBATeamModel.swift */; };
+		F4BFD56C2BD0AEB50088ED3C /* NBATeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BFD56B2BD0AEB50088ED3C /* NBATeamViewModel.swift */; };
+		F4BFD56E2BD0B4A80088ED3C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4BFD56D2BD0B4A80088ED3C /* GoogleService-Info.plist */; };
+		F4BFD5712BD0B6C00088ED3C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = F4BFD5702BD0B6C00088ED3C /* FirebaseAnalytics */; };
+		F4BFD5732BD0B6C00088ED3C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F4BFD5722BD0B6C00088ED3C /* FirebaseFirestore */; };
+		F4BFD5752BD0B6C00088ED3C /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F4BFD5742BD0B6C00088ED3C /* FirebaseFirestoreSwift */; };
+		F4BFD5772BD0BBED0088ED3C /* NBATeamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BFD5762BD0BBED0088ED3C /* NBATeamDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4BFD54D2BD0AE5A0088ED3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4BFD5342BD0AE560088ED3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4BFD53B2BD0AE560088ED3C;
+			remoteInfo = NBATeams;
+		};
+		F4BFD5572BD0AE5A0088ED3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4BFD5342BD0AE560088ED3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4BFD53B2BD0AE560088ED3C;
+			remoteInfo = NBATeams;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F4BFD53C2BD0AE560088ED3C /* NBATeams.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBATeams.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4BFD53F2BD0AE560088ED3C /* NBATeamsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBATeamsApp.swift; sourceTree = "<group>"; };
+		F4BFD5412BD0AE560088ED3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F4BFD5432BD0AE5A0088ED3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4BFD5462BD0AE5A0088ED3C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F4BFD54C2BD0AE5A0088ED3C /* NBATeamsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBATeamsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4BFD5502BD0AE5A0088ED3C /* NBATeamsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBATeamsTests.swift; sourceTree = "<group>"; };
+		F4BFD5562BD0AE5A0088ED3C /* NBATeamsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBATeamsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4BFD55A2BD0AE5A0088ED3C /* NBATeamsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBATeamsUITests.swift; sourceTree = "<group>"; };
+		F4BFD55C2BD0AE5A0088ED3C /* NBATeamsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBATeamsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F4BFD5692BD0AE8F0088ED3C /* NBATeamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBATeamModel.swift; sourceTree = "<group>"; };
+		F4BFD56B2BD0AEB50088ED3C /* NBATeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBATeamViewModel.swift; sourceTree = "<group>"; };
+		F4BFD56D2BD0B4A80088ED3C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F4BFD5762BD0BBED0088ED3C /* NBATeamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NBATeamDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4BFD5392BD0AE560088ED3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4BFD5712BD0B6C00088ED3C /* FirebaseAnalytics in Frameworks */,
+				F4BFD5732BD0B6C00088ED3C /* FirebaseFirestore in Frameworks */,
+				F4BFD5752BD0B6C00088ED3C /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4BFD5492BD0AE5A0088ED3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4BFD5532BD0AE5A0088ED3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4BFD5332BD0AE560088ED3C = {
+			isa = PBXGroup;
+			children = (
+				F4BFD53E2BD0AE560088ED3C /* NBATeams */,
+				F4BFD54F2BD0AE5A0088ED3C /* NBATeamsTests */,
+				F4BFD5592BD0AE5A0088ED3C /* NBATeamsUITests */,
+				F4BFD53D2BD0AE560088ED3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4BFD53D2BD0AE560088ED3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4BFD53C2BD0AE560088ED3C /* NBATeams.app */,
+				F4BFD54C2BD0AE5A0088ED3C /* NBATeamsTests.xctest */,
+				F4BFD5562BD0AE5A0088ED3C /* NBATeamsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4BFD53E2BD0AE560088ED3C /* NBATeams */ = {
+			isa = PBXGroup;
+			children = (
+				F4BFD53F2BD0AE560088ED3C /* NBATeamsApp.swift */,
+				F4BFD5412BD0AE560088ED3C /* ContentView.swift */,
+				F4BFD56D2BD0B4A80088ED3C /* GoogleService-Info.plist */,
+				F4BFD5432BD0AE5A0088ED3C /* Assets.xcassets */,
+				F4BFD5452BD0AE5A0088ED3C /* Preview Content */,
+				F4BFD5692BD0AE8F0088ED3C /* NBATeamModel.swift */,
+				F4BFD56B2BD0AEB50088ED3C /* NBATeamViewModel.swift */,
+				F4BFD5762BD0BBED0088ED3C /* NBATeamDetailView.swift */,
+			);
+			path = NBATeams;
+			sourceTree = "<group>";
+		};
+		F4BFD5452BD0AE5A0088ED3C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F4BFD5462BD0AE5A0088ED3C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F4BFD54F2BD0AE5A0088ED3C /* NBATeamsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4BFD5502BD0AE5A0088ED3C /* NBATeamsTests.swift */,
+			);
+			path = NBATeamsTests;
+			sourceTree = "<group>";
+		};
+		F4BFD5592BD0AE5A0088ED3C /* NBATeamsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F4BFD55A2BD0AE5A0088ED3C /* NBATeamsUITests.swift */,
+				F4BFD55C2BD0AE5A0088ED3C /* NBATeamsUITestsLaunchTests.swift */,
+			);
+			path = NBATeamsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4BFD53B2BD0AE560088ED3C /* NBATeams */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4BFD5602BD0AE5A0088ED3C /* Build configuration list for PBXNativeTarget "NBATeams" */;
+			buildPhases = (
+				F4BFD5382BD0AE560088ED3C /* Sources */,
+				F4BFD5392BD0AE560088ED3C /* Frameworks */,
+				F4BFD53A2BD0AE560088ED3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NBATeams;
+			packageProductDependencies = (
+				F4BFD5702BD0B6C00088ED3C /* FirebaseAnalytics */,
+				F4BFD5722BD0B6C00088ED3C /* FirebaseFirestore */,
+				F4BFD5742BD0B6C00088ED3C /* FirebaseFirestoreSwift */,
+			);
+			productName = NBATeams;
+			productReference = F4BFD53C2BD0AE560088ED3C /* NBATeams.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4BFD54B2BD0AE5A0088ED3C /* NBATeamsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4BFD5632BD0AE5A0088ED3C /* Build configuration list for PBXNativeTarget "NBATeamsTests" */;
+			buildPhases = (
+				F4BFD5482BD0AE5A0088ED3C /* Sources */,
+				F4BFD5492BD0AE5A0088ED3C /* Frameworks */,
+				F4BFD54A2BD0AE5A0088ED3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4BFD54E2BD0AE5A0088ED3C /* PBXTargetDependency */,
+			);
+			name = NBATeamsTests;
+			productName = NBATeamsTests;
+			productReference = F4BFD54C2BD0AE5A0088ED3C /* NBATeamsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F4BFD5552BD0AE5A0088ED3C /* NBATeamsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4BFD5662BD0AE5A0088ED3C /* Build configuration list for PBXNativeTarget "NBATeamsUITests" */;
+			buildPhases = (
+				F4BFD5522BD0AE5A0088ED3C /* Sources */,
+				F4BFD5532BD0AE5A0088ED3C /* Frameworks */,
+				F4BFD5542BD0AE5A0088ED3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4BFD5582BD0AE5A0088ED3C /* PBXTargetDependency */,
+			);
+			name = NBATeamsUITests;
+			productName = NBATeamsUITests;
+			productReference = F4BFD5562BD0AE5A0088ED3C /* NBATeamsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4BFD5342BD0AE560088ED3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					F4BFD53B2BD0AE560088ED3C = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					F4BFD54B2BD0AE5A0088ED3C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = F4BFD53B2BD0AE560088ED3C;
+					};
+					F4BFD5552BD0AE5A0088ED3C = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = F4BFD53B2BD0AE560088ED3C;
+					};
+				};
+			};
+			buildConfigurationList = F4BFD5372BD0AE560088ED3C /* Build configuration list for PBXProject "NBATeams" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4BFD5332BD0AE560088ED3C;
+			packageReferences = (
+				F4BFD56F2BD0B6C00088ED3C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = F4BFD53D2BD0AE560088ED3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4BFD53B2BD0AE560088ED3C /* NBATeams */,
+				F4BFD54B2BD0AE5A0088ED3C /* NBATeamsTests */,
+				F4BFD5552BD0AE5A0088ED3C /* NBATeamsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4BFD53A2BD0AE560088ED3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4BFD5472BD0AE5A0088ED3C /* Preview Assets.xcassets in Resources */,
+				F4BFD5442BD0AE5A0088ED3C /* Assets.xcassets in Resources */,
+				F4BFD56E2BD0B4A80088ED3C /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4BFD54A2BD0AE5A0088ED3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4BFD5542BD0AE5A0088ED3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4BFD5382BD0AE560088ED3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4BFD56A2BD0AE8F0088ED3C /* NBATeamModel.swift in Sources */,
+				F4BFD5772BD0BBED0088ED3C /* NBATeamDetailView.swift in Sources */,
+				F4BFD56C2BD0AEB50088ED3C /* NBATeamViewModel.swift in Sources */,
+				F4BFD5422BD0AE560088ED3C /* ContentView.swift in Sources */,
+				F4BFD5402BD0AE560088ED3C /* NBATeamsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4BFD5482BD0AE5A0088ED3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4BFD5512BD0AE5A0088ED3C /* NBATeamsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4BFD5522BD0AE5A0088ED3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4BFD55D2BD0AE5A0088ED3C /* NBATeamsUITestsLaunchTests.swift in Sources */,
+				F4BFD55B2BD0AE5A0088ED3C /* NBATeamsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4BFD54E2BD0AE5A0088ED3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4BFD53B2BD0AE560088ED3C /* NBATeams */;
+			targetProxy = F4BFD54D2BD0AE5A0088ED3C /* PBXContainerItemProxy */;
+		};
+		F4BFD5582BD0AE5A0088ED3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4BFD53B2BD0AE560088ED3C /* NBATeams */;
+			targetProxy = F4BFD5572BD0AE5A0088ED3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F4BFD55E2BD0AE5A0088ED3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4BFD55F2BD0AE5A0088ED3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4BFD5612BD0AE5A0088ED3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NBATeams/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CPSC.NBATeams;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4BFD5622BD0AE5A0088ED3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NBATeams/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CPSC.NBATeams;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F4BFD5642BD0AE5A0088ED3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CPSC.NBATeamsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NBATeams.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NBATeams";
+			};
+			name = Debug;
+		};
+		F4BFD5652BD0AE5A0088ED3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CPSC.NBATeamsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NBATeams.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NBATeams";
+			};
+			name = Release;
+		};
+		F4BFD5672BD0AE5A0088ED3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CPSC.NBATeamsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NBATeams;
+			};
+			name = Debug;
+		};
+		F4BFD5682BD0AE5A0088ED3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = CPSC.NBATeamsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NBATeams;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4BFD5372BD0AE560088ED3C /* Build configuration list for PBXProject "NBATeams" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4BFD55E2BD0AE5A0088ED3C /* Debug */,
+				F4BFD55F2BD0AE5A0088ED3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4BFD5602BD0AE5A0088ED3C /* Build configuration list for PBXNativeTarget "NBATeams" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4BFD5612BD0AE5A0088ED3C /* Debug */,
+				F4BFD5622BD0AE5A0088ED3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4BFD5632BD0AE5A0088ED3C /* Build configuration list for PBXNativeTarget "NBATeamsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4BFD5642BD0AE5A0088ED3C /* Debug */,
+				F4BFD5652BD0AE5A0088ED3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4BFD5662BD0AE5A0088ED3C /* Build configuration list for PBXNativeTarget "NBATeamsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4BFD5672BD0AE5A0088ED3C /* Debug */,
+				F4BFD5682BD0AE5A0088ED3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F4BFD56F2BD0B6C00088ED3C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F4BFD5702BD0B6C00088ED3C /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4BFD56F2BD0B6C00088ED3C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		F4BFD5722BD0B6C00088ED3C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4BFD56F2BD0B6C00088ED3C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		F4BFD5742BD0B6C00088ED3C /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4BFD56F2BD0B6C00088ED3C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F4BFD5342BD0AE560088ED3C /* Project object */;
+}
